@@ -12,6 +12,12 @@ function UpdateContact(props) {
 
     const update = (e) => {
         e.preventDefault();
+
+        if (form.name === "" || form.email === "" || form.mobile === "" || form.address === "") {
+            alert("All fields (Name, Email, Mobile, Address) are mandatory!");
+            return;
+        }
+
         props.updateContactData(form);
     };
 

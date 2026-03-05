@@ -12,8 +12,8 @@ function AddContact(props) {
     const add = (e) => {
         e.preventDefault();
 
-        if (form.name === "" || form.mobile === "") {
-            alert("Name and Mobile are mandatory!");
+        if (form.name === "" || form.email === "" || form.mobile === "" || form.address === "") {
+            alert("All fields (Name, Email, Mobile, Address) are mandatory!");
             return;
         }
 
