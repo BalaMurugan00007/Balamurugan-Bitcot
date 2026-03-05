@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contactBox {
+  width: 400px;
+  background-color: black;
+  height: 500px;
+  margin-left: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Hdr-Content {
+  margin-left: 35%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-container {
+  position: relative;
+  width: 143%;
+  margin-left: -129px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.hdr-bar {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  background-color: #fff;
+}
+
+.hdr-bar:focus {
+  border-color: lightblue;
+  box-shadow: 0 0 5px rgba(173, 216, 230, 0.8);
+}
+
+.hdr-btn {
+  margin-left: 15%;
+
+}
+
+.heading-bg {
+  background-color: lightblue;
+  margin-left: -140px;
+  border-radius: 10px;
+
+
+
+}
+
+.heading {
+  color: black;
+  margin-left: 30%;
+
+
+}
+
+.list-box {
+  background-color: #222;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  height: 270px;
+  overflow-y: scroll;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cnt-item {
+  background-color: white;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cnt-name {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cnt-num {
+  font-size: 12px;
+  color: #555;
+  margin-top: 3px;
+}
+
+.btn-box {
+  margin-top: 5px;
+}
+
+.edit-btn {
+  background-color: orange;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.del-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-wrap {
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+.add-btn {
+  background-color: lightgreen;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  margin-top: 10px;
+
+}
+
+.main-app-wrap {
+  display: flex;
+}
+
+.sideBox {
+  width: 350px;
+  background-color: #333;
+  height: 470px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.side-hd {
+  color: white;
+  text-align: center;
+  border-bottom: 2px solid lightblue;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.add-form {
+  margin-top: 50px;
+  margin-left: 50px;
+  color: white;
+}
+
+.add-form input {
+  width: 220px;
+  height: 32px;
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contactBox {
+  transition: filter 0.3s ease;
+}
+
+.blur-bg {
+  filter: blur(4px);
+  pointer-events: none;
+  
+}
+
+.relative-box {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+}
+
+.detail-txt {
+  color: white;
+  margin-top: 30px;
+  line-height: 2;
+  font-size: 16px;
+  padding: 0 10px;
 }
